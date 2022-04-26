@@ -37,7 +37,7 @@ http_interactions:
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=4YV%2F2f98Sulf2xYPtKlTOM%2Bur%2BxVbQMXiCAFP4h0o67oue8R%2F0c%2FQfzXkIyWF7Ja5ulQDVdCfsTf1GejBkTLGBte54d3AMl0GO2wLZgFSlwzV7ZbXpUnCTCLPs%2FH5Eug"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=exipPtPOKg9%2FK3kYBjlLqADYqCot9tTJWRyWNbTfy21Qfic4nE0U7pDLofOR6vSCpcSk59R4cgUoCrzbuBbEalVfpLaUShTlwxXgc34pgUqoUdQXHWr2qPRsGAGVZ7cD"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Vary:
@@ -45,7 +45,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 702309e31d020c2f-DFW
+      - 702309e698289f0d-DFW
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:

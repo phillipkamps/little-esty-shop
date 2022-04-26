@@ -16,5 +16,12 @@
 <br>
 <div class="upcoming-holidays">
 <h3>Upcoming Holidays</h3>
-
+<ol>
+<% @next_3_holidays.each do |holiday| %>
+  <li>
+<%= holiday.name %>
+<%= holiday.date %>
+  </li>
+<% end %>
+</ol>
 </div>

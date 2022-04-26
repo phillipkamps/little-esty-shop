@@ -99,7 +99,7 @@ describe "merchant dashboard page" do
     expect(page).not_to have_content("Invoice ##{@invoice_3.id}")
   end
 
-  it "has link to bulk discounts index page" do
+  it "has link to bulk discounts index page", :vcr do
     click_link "View all discounts"
     expect(current_path).to eq("/merchants/#{@merchant_1.id}/bulk_discounts")
     expect(page).to have_content("Bulk Discounts")

@@ -12,7 +12,7 @@ RSpec.describe "Bulk discounts delete page" do
     visit "/merchants/#{merchant.id}/bulk_discounts/"
   end
 
-  it "has link to delete bulk discount" do
+  it "has link to delete bulk discount", :vcr do
     within "##{bulk_discount_b.id}" do
       click_link "Delete"
     end

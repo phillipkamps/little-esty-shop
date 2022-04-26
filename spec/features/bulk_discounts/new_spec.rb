@@ -12,12 +12,12 @@ RSpec.describe "Bulk discounts new page" do
     visit "/merchants/#{merchant.id}/bulk_discounts/new"
   end
 
-  it "has form to create new bulk discount" do
+  it "has form to create new bulk discount", :vcr do
     expect(page).to have_field("Percentage (as decimal):")
     expect(page).to have_field("Item quantity:")
   end
 
-  it "creates new bulk discount" do
+  it "creates new bulk discount", :vcr do
     fill_in "Percentage (as decimal):", with: "0.75"
     fill_in "Item quantity", with: "70000"
     click_button("Create discount")
