@@ -1,4 +1,3 @@
-require "active_support/core_ext/enumerable"
 require "./lib/holiday_api/holiday_service"
 require "./lib/holiday_api/upcoming_holidays"
 
